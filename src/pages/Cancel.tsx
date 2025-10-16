@@ -6,12 +6,12 @@ export default function Cancel() {
       <div className="relative overflow-hidden w-full">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10"></div>
 
-        <div className="relative max-w-3xl mx-auto px-6 py-16 text-center">
-          <div className="inline-flex items-center justify-center w-28 h-28 mb-8 rounded-full bg-gradient-to-br from-orange-500/30 to-red-500/30 border border-orange-500/30">
+        <div className="relative max-w-6xl mx-auto px-6 py-16 text-center">
+          <div className="inline-flex animate-pulse  items-center  justify-center w-28 h-28 mb-8 rounded-full bg-gradient-to-br from-orange-500/30 to-red-500/30 border border-orange-500/30">
             <XCircle className="w-14 h-14 text-orange-400" />
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-orange-100 to-orange-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-white via-orange-100 to-orange-400 bg-clip-text text-transparent">
             Subscription Cancelled
           </h1>
 
@@ -39,15 +39,15 @@ export default function Cancel() {
           </div>
 
           <div className="grid sm:grid-cols-3 gap-4 text-sm text-gray-400">
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 py-10">
               <p className="font-semibold text-white mb-1">Secure Payment</p>
               <p>Protected by Stripe</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 py-10">
               <p className="font-semibold text-white mb-1">Money-Back Guarantee</p>
               <p>30-day refund policy</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 py-10">
               <p className="font-semibold text-white mb-1">24/7 Support</p>
               <p>We're here to help</p>
             </div>
