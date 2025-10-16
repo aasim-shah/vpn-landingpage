@@ -7,15 +7,15 @@ export default function Uninstalled() {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10"></div>
 
         <div className="relative max-w-4xl mx-auto px-6 py-16 text-center">
-          <div className="inline-flex items-center justify-center w-24 h-24 mb-8 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-white/10">
+          <div className="inline-flex items-center justify-center w-24 h-24 mb-8 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-white/10 animate-pulse" >
             <Heart className="w-12 h-12 text-cyan-400" />
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-cyan-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-cyan-400 bg-clip-text text-transparent">
             We're Sorry to See You Go
           </h1>
 
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300/60 mb-12 max-w-xl mx-auto">
             Your privacy matters — we'd love to hear your feedback to help us improve.
           </p>
 
@@ -30,7 +30,7 @@ export default function Uninstalled() {
           </div>
 
           <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
-            <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-gradient-to-br from-blue-500/30 to-cyan-500/30">
+            <div className="inline-flex items-center justify-center w-16 animate-bounce h-16 mb-6 rounded-full bg-gradient-to-br from-blue-500/30 to-cyan-500/30">
               <Download className="w-8 h-8 text-cyan-400" />
             </div>
 
