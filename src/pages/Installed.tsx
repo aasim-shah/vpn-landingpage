@@ -10,8 +10,8 @@ export default function Installed() {
         <div className="relative max-w-6xl mx-auto px-6 py-16">
           <div className="text-center mb-16">
            
-            <div className="inline-flex items-center justify-center w-44 h-44 mb-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 p-1 shadow-lg shadow-blue-500/50">
-              <div className="w-full h-full rounded-full bg-[#061E38] flex items-center justify-center">
+            <div className="inline-flex animate-pulse items-center justify-center w-44 h-44 mb-8 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 p-1 shadow-lg shadow-blue-500/50">
+              <div className="w-full h-full rounded-full bg-[#061E38] flex items-center justify-center ">
                 <img src="/logo.webp" alt="EEagle VPN Logo" className="w-24 h-24" />
               </div>
             </div>
@@ -30,7 +30,7 @@ export default function Installed() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex flex-col items-center">
                 <MousePointer className="w-10 h-10 text-cyan-400 mb-3" />
-                <h4 className="font-medium   mb-1">1. Click the EEagle icon</h4>
+                <h4 className="font-medium   mb-1">1. Click the eEagle icon</h4>
                 <p className="text-sm text-gray-400">Find it in the Chrome toolbar at the top-right.</p>
               </div>
               <div className="flex flex-col items-center">

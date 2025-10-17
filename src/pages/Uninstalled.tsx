@@ -1,6 +1,15 @@
 import { Heart, MessageSquare, Download } from 'lucide-react';
+import { useState } from 'react';
+import FeedbackModal from '../components/FeedbackModal';
 
 export default function Uninstalled() {
+  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
+
+  const handleFeedbackClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsFeedbackModalOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-[#061E38] text-white flex items-center">
       <div className="relative overflow-hidden w-full">
@@ -20,13 +29,13 @@ export default function Uninstalled() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
-            <a
-              href="#feedback"
+            <button
+              onClick={handleFeedbackClick}
               className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105"
             >
               <MessageSquare className="w-5 h-5" />
               <span>Share Feedback</span>
-            </a>
+            </button>
           </div>
 
           <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
@@ -54,6 +63,11 @@ export default function Uninstalled() {
           </div>
         </div>
       </div>
+
+      <FeedbackModal
+        isOpen={isFeedbackModalOpen}
+        onClose={() => setIsFeedbackModalOpen(false)}
+      />
     </div>
   );
 }
