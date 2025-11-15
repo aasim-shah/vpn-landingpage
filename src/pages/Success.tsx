@@ -18,7 +18,11 @@ export default function Success() {
     }
 
     // 👇 Call your backend directly
-    fetch(`http://167.172.17.109:8000/api/extension/checkout/success?session_id=${sessionId}`)
+
+    const apiUrl = "http://167.172.17.109:8000";
+    // const apiUrl = "http://localhost:8000";
+    // const apiUrl = "https://api.eeaglevpn.com";
+    fetch(`${apiUrl}/api/extension/checkout/success?session_id=${sessionId}`)
       .then((res) => res.json())
       .then((data) => {
         if (!data.ok) {
