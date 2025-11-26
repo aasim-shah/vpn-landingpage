@@ -4,10 +4,10 @@ import Uninstalled from './pages/Uninstalled';
 import Success from './pages/Success';
 import Cancel from './pages/Cancel';
 import Contact from './pages/Contact';
-import PrivacyPolicy from './pages/privacy';
 import FaqPage from './pages/Faqs';
 import TermsOfUse from './pages/TermsOfUse';
 import NotFound from './pages/no-page-found';
+import PrivacyPolicy from './pages/Privacy';
 
 function App() {
   return (
