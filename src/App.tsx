@@ -18,6 +18,7 @@ function App() {
         <Route path="/uninstalled" element={<Uninstalled />} />
         <Route path="/success" element={<Success />} />
         <Route path="/cancel" element={<Cancel />} />
+        <Route path="cancel" element={<Cancel />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/faqs" element={<FaqPage />} />
