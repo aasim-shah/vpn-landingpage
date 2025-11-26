@@ -22,7 +22,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/faqs" element={<FaqPage />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
 
         
       </Routes>
