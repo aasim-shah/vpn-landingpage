@@ -3,6 +3,11 @@ import Installed from './pages/Installed';
 import Uninstalled from './pages/Uninstalled';
 import Success from './pages/Success';
 import Cancel from './pages/Cancel';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/privacy';
+import FaqPage from './pages/Faqs';
+import TermsOfUse from './pages/TermsOfUse';
+import NotFound from './pages/no-page-found';
 
 function App() {
   return (
@@ -13,6 +18,13 @@ function App() {
         <Route path="/uninstalled" element={<Uninstalled />} />
         <Route path="/success" element={<Success />} />
         <Route path="/cancel" element={<Cancel />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/faqs" element={<FaqPage />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/*" element={<NotFound />} />
+
+        
       </Routes>
     </BrowserRouter>
   );
